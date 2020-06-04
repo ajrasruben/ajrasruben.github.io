@@ -107,7 +107,20 @@
         </div>
       </div>
     </div>
-
+    <div id="respuestaTemplate" style="display: none;">
+      <div class="card answer">
+        <div class="card-header">
+          <h6 class="card-title"><i class="fa fa-question-circle-o pull-left"></i><span span style="margin-left: 10px;" class="badge badge-pill">Pensamiento Liberal</span><span class="pregunta" >What is Lorem Ipsum?</span></h6>
+        </div>
+        <div class="card-body">
+          <p><b>Tu respuesta: </b><span class="userResponse" >Esta es tu respuesta</span></p>
+          <p><b>Uni2 propone: </b><b class="propuesta"></b><span class="uni2Response" >
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen bookEsta es tu respuesta</span></p>
+        </div>
+      </div>
+    </div>
     <section id="bases">
       <div class="container clearfix">
         <div class="row">
@@ -120,32 +133,7 @@
         </div>
         <div class="contenedorCuestionario">
         </div>
-        <div class="respuestasCuestionario clearfix">
-          <div class="respuestaResultado" style=""> Sos un 55% liberal</div>
-          <div class="card answer">
-            <div class="card-header">
-              <h6 class="card-title"><i class="fa fa-question-circle-o mr-2 mt-0-20 pull-left"></i><span class="badge badge-pill badge-success">Pensamiento Liberal</span><span class="pregunta" >What is Lorem Ipsum?</span></h6>
-            </div>
-              <div class="card-body">
-                <p><b>Tu respuesta: </b><span class="userResponse" >Esta es tu respuesta</span></p>
-                <p><b>Uni2 propone: </b><span class="userResponse" >
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen bookEsta es tu respuesta</span></p>
-              </div>
-          </div>
-          <div class="card answer">
-            <div class="card-header">
-              <h6 class="card-title"><i class="fa fa-question-circle-o mr-2 mt-0-20 pull-left"></i><span class="badge badge-pill badge-success">Pensamiento Liberal</span><span class="pregunta">What is Lorem Ipsum?</span></h6>
-            </div>
-            <div class="card-body">
-              <p><b>Tu respuesta: </b><span class="userResponse" >Esta es tu respuesta</span></p>
-              <p><b>Uni2 propone: </b><span class="userResponse" >
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen bookEsta es tu respuesta</span></p>
-            </div>
-          </div>
+        <div class="respuestasCuestionario clearfix" style="display: none;">
         </div>
       </div>
     </section>
@@ -153,8 +141,6 @@
     <script type="text/javascript">
       agregarPreguntas();
       updateQuestionNumberOfQuestions();
-      // $($(".nextquestion").get(1)).parent().find(".mustComplete").show();
-      // $($(".nextquestion").get(1)).parent().find(".mustComplete").removeClass("invisible");
     </script>
     <div class="container-fluid">
       <div class="row footer">

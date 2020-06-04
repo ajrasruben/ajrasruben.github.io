@@ -53,7 +53,7 @@ function agregarPreguntas(){
         item.find(".question").html(value["pregunta"]);
         value["opciones"].forEach(function(opt){
             var li =    "<li><label><input name='q" + index + "' type='radio' class='option ";
-            if(value.hasOwnProperty("isLiberal") && opt.isLiberal){
+            if(opt.hasOwnProperty("esLiberal") && opt.esLiberal){
                 li = li + "true";
             }
             li = li + "'>   " + opt["respuesta"]+"</label></li>";
@@ -95,7 +95,31 @@ function onNextQuestionClick(){
 }
 
 function mostrarResultado(){
-    //$(".questionBox").find("input:radio:checked.true").length
-    //$(".questionBox").length
-    alert("fin del cuestionario");
+    var template = $("#respuestaTemplate .answer");
+    $(".contenedorCuestionario").hide();
+    var resp = $(".respuestasCuestionario");
+    resp.empty();
+    var verdaderas = $(".contenedorCuestionario .questionBox").find("input:radio:checked.true").length;
+    var total = $(".contenedorCuestionario .questionBox").length;
+    var percentage = Math.round( verdaderas/total * 100) ;
+    resp.append("<div class='respuestaResultado' > Sos un "+ percentage +"% liberal</div>");
+//badge-success
+    jsonPreguntas.forEach(function (value,index) {
+        item = template.clone();
+        item.find(".pregunta").html(value["pregunta"]);
+        var rta = $(".contenedorCuestionario .questionBox input:radio[name='q" + index + "']:checked").parent().text().trim();
+
+        if($(".contenedorCuestionario .questionBox input:radio[name='q" + index + "']:checked").hasClass("true")){
+            item.find(".badge").addClass("badge-success");
+            item.find(".badge").html("Pensamiento Liberal");
+        }else{
+            item.find(".badge").addClass("badge-danger");
+            item.find(".badge").html("Pensamiento No Liberal");
+        }
+        item.find(".userResponse").html(rta);
+        item.find(".propuesta").html(value["propuesta"]["titulo"] + " ");
+        item.find(".uni2Response").html(value["propuesta"]["descripcion"]);
+        resp.append(item);
+    });
+    resp.show();
 }
