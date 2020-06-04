@@ -1,0 +1,114 @@
+/* AQUI VAN TODOS LOS ESTILOS PARA CADA UNA DE LAS SUB-PAGINAS DEL SITIO */
+
+/* PAGES BASES */
+#bases {
+  margin: 92px 0 100px 0;
+}
+#bases .row {
+  text-align: justify;
+}
+#bases .nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+  justify-content: center;
+  margin: 130px 0 0 0;
+}
+#bases .nav-link {
+  color: var(--secondary-color);
+  font-family: grotesk-bold;
+}
+
+.title {
+  font-family: "grotesk-medium";
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin: 2rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--third-color);
+  font-family: "grotesk-medium";
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  font-family: "grotesk-regular";
+  margin-bottom: 1.5rem;
+}
+
+.invitacion {
+  font-family: "grotesk-medium";
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin: 0.8rem 0 3rem 0;
+}
+
+.title2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-family: "grotesk-medium";
+  margin-bottom: 1.5rem;
+  text-align: center !important;
+}
+
+/* PAGE REFERENTE */
+#referente {
+  margin: 5% 0 150px 0;
+}
+#referente img {
+  width: 100%;
+}
+.title-referente {
+  font-family: "grotesk-bold";
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin: 3rem 0 1.5rem 0;
+}
+
+.descripcion-referente {
+  font-size: 1rem;
+  color: var(--third-color);
+  font-family: "grotesk-medium";
+  margin-bottom: 1rem;
+}
+
+#referente i {
+  color: var(--primary-color);
+  margin: 1rem 0.7rem 0 0;
+  font-size: 1.2rem;
+}
+
+.box-part{
+ /* background:#FFF; */
+  border-radius:0;
+  padding:20px 10px;
+}
+
+/* MEDIA QUERIES MOBILE */
+@media (max-width: 768px) {
+  #bases .subtitle {
+    text-align: center;
+  }
+  #bases .title {
+    font-size: 1.6rem;
+  }
+  #bases .title2 {
+    font-size: 1.2rem;
+  }
+  #referente {
+    margin: 92px 0 150px 0;
+  }
+  .title-referente {
+    margin: 1.5rem 0 1.5rem 0;
+    text-align: center;
+  }
+  .descripcion-referente {
+    margin: 1rem;
+    text-align: justify;
+  }
+  .redes-referente .col-md-3 {
+    display: flex;
+    justify-content: center;
+  }
+}
