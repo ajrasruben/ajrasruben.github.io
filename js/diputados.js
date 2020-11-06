@@ -457,10 +457,17 @@ var htmlTemplate = "<div class='col-md-4 col-12'>" +
                         "</div>" +
                     "</div>";
 var mailSubject = "No a la Reforma Judicial";
-var mailBody= 'Señor Legislador/ra por medio de la presente le solicito que en el día en que se trate la "Reforma Judicial" conocida con el nombre de "LEY DE ORGANIZACIÓN Y COMPETENCIA DE LA JUSTICIA FEDERAL CON ASIENTO ' +
-              'EN LA CIUDAD AUTÓNOMA DE BUENOS AIRES Y EN LAS PROVINCIAS", se abstenga de hacerse presente en la Cámara para evitar el quórum, y de esta forma no ser cómplice de un gobierno que tiene las prioridades alteradas. ' +
-              'Cómo parte del pueblo, le informo que hay otros temas que son prioridades. Revistiendo el carácter de NECESARIAS y URGENTES, para tratar y sesionar en este contexto de emergencia sanitaria, económica y social. ' +
-              'Desde ya apelo a qué realizará lo correcto no dando quórum y evitando ser cómplice de un gobierno oportunista. Saludos cordiales!';
+
+var mailBody= "Sr/a Concejal:"+
+"Me dirijo a Ud. para manifestarle mi preocupación y mi opinión negativa para la construcción de una alcaidia (cárcel) en la ribera Quilmes."+
+"Particularmente, la zona elegida es el único espacio verde que le queda al municipio, además de que se trata de una zona inundable."+
+"El partido de Quilmes en su totalidad es una zona urbanizada, no contamos con terrenos libres ya que estamos rodeados de otros municipios igual de poblados como el nuestro y solo nos limita avenidas o vías del tren."+
+"Por esta razón es la que le solicito  a Ud, como representante de los intereses de los quilmeños, que revean el proyecto y que NO se vote a las apuradas sin analizar un informe detallado sobre aspectos técnicos y ambientales."+
+"Desde ya, muchas gracias por su tiempo.";
+//var mailBody= 'Señor Legislador/ra por medio de la presente le solicito que en el día en que se trate la "Reforma Judicial" conocida con el nombre de "LEY DE ORGANIZACIÓN Y COMPETENCIA DE LA JUSTICIA FEDERAL CON ASIENTO ' +
+//              'EN LA CIUDAD AUTÓNOMA DE BUENOS AIRES Y EN LAS PROVINCIAS", se abstenga de hacerse presente en la Cámara para evitar el quórum, y de esta forma no ser cómplice de un gobierno que tiene las prioridades alteradas. ' +
+//              'Cómo parte del pueblo, le informo que hay otros temas que son prioridades. Revistiendo el carácter de NECESARIAS y URGENTES, para tratar y sesionar en este contexto de emergencia sanitaria, económica y social. ' +
+//              'Desde ya apelo a qué realizará lo correcto no dando quórum y evitando ser cómplice de un gobierno oportunista. Saludos cordiales!';
 
 
 
