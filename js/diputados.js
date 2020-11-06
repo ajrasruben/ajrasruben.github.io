@@ -1,28 +1,28 @@
-var jsonDiputados =[{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0366-350x290.jpg","Concejal":"Fabio Báez","Correo":"presidenciahcd@quilmes.gov.ar","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0361-350x290.jpg","Concejal":"STOLTZING UGARTE María Eva","Correo":"mariaevastol@gmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0366-350x290.jpg","Concejal":"BAEZ Fabio Rubén","Correo":"fabiodequilmes@gmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/04/dangelo-2-350x290.jpg","Concejal":"D´ANGELO OCAMPOS Federico","Correo":"fedeadangelo@gmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2020/06/DSC_0205-350x290.jpg","Concejal":"ABAD Nair","Correo":"nair.iara.abad@gmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2020/06/DSC_0214-350x290.jpg","Concejal":"BURTOLI Ariel Antonio","Correo":"arielburtoli@hotmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0381-350x290.jpg","Concejal":"CANO Susana","Correo":"susybcano@gmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0329-350x290.jpg","Concejal":"FESTUCCA Matías","Correo":"matiasfestucca@hotmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/themes/example/img/integrante.png","Concejal":"GONZALEZ Laura Elizabeth","Correo":"lauragonzalaez07@hotmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/themes/example/img/integrante.png","Concejal":"GOMEZ Fernando Ariel","Correo":"lularifflara@gmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/themes/example/img/integrante.png","Concejal":"IRIBARNE Patricia Noemí","Correo":"patriciairibarne66@gmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2016/08/21-e1515589217105-350x290.jpg","Concejal":"MIERI María Eva","Correo":"despachoevamieri@gmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0348-350x290.jpg","Concejal":"MENDEZ Diego","Correo":"diegomendez.quilmes@gmail.com","Bloque":"FRENTE DE TODOS"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2016/08/177-Editar-350x290.jpg","Concejal":"BERNASCONI Juan Manuel","Correo":"bernasconi.j.m@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2020/06/DSC_0164-350x290.jpg","Concejal":"SOTOLANO María Angel","Correo":"maruproquilmes@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0321-350x290.jpg","Concejal":"CASTRO Damián Guillermo","Correo":"damiancastroquilmes@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2020/06/DSC_0170-350x290.jpg","Concejal":"CHIODO Ignacio","Correo":"chiodoabogados@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2016/08/DSC_0489-350x290.jpg","Concejal":"COLDANI Raquel","Correo":"raquelcoldani@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0418-350x290.jpg","Concejal":"CONVERSANO Daniela","Correo":"concejaldanielaconversano@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0339-350x290.jpg","Concejal":"GALETTO Guillermo","Correo":"guillermoggaletto@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2020/06/DSC_0176-350x290.jpg","Concejal":"GAITAN Facundo Martín","Correo":"facundogaitanhcd@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0342-350x290.jpg","Concejal":"MAISU Facundo","Correo":"maisufacundo@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2020/06/DSC_0183-350x290.jpg","Concejal":"VIGLIANCO Eyleen","Correo":"eyleenviglianco@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/themes/example/img/integrante.png","Concejal":"VIRGILIO Elisabet Laura","Correo":"elyvirgi@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
-,{"Foto":"http://hcd.quilmes.gov.ar/wp-content/uploads/2018/01/DSC_0401-2-350x290.jpg","Concejal":"FERNANDEZ Gabriela","Correo":"conquilmes@yahoo.com.ar","Bloque":"GEN PROGRESISTA"}
+var jsonDiputados =[{"Foto":"img/concejales/DSC_0366-350x290.jpg","Concejal":"Fabio Báez","Correo":"presidenciahcd@quilmes.gov.ar","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0361-350x290.jpg","Concejal":"STOLTZING UGARTE María Eva","Correo":"mariaevastol@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0366-350x290.jpg","Concejal":"BAEZ Fabio Rubén","Correo":"fabiodequilmes@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/dangelo-2-350x290.jpg","Concejal":"D´ANGELO OCAMPOS Federico","Correo":"fedeadangelo@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0205-350x290.jpg","Concejal":"ABAD Nair","Correo":"nair.iara.abad@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0214-350x290.jpg","Concejal":"BURTOLI Ariel Antonio","Correo":"arielburtoli@hotmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0381-350x290.jpg","Concejal":"CANO Susana","Correo":"susybcano@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0329-350x290.jpg","Concejal":"FESTUCCA Matías","Correo":"matiasfestucca@hotmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/integrante.png","Concejal":"GONZALEZ Laura Elizabeth","Correo":"lauragonzalaez07@hotmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/integrante.png","Concejal":"GOMEZ Fernando Ariel","Correo":"lularifflara@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/integrante.png","Concejal":"IRIBARNE Patricia Noemí","Correo":"patriciairibarne66@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/21-e1515589217105-350x290.jpg","Concejal":"MIERI María Eva","Correo":"despachoevamieri@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0348-350x290.jpg","Concejal":"MENDEZ Diego","Correo":"diegomendez.quilmes@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/177-Editar-350x290.jpg","Concejal":"BERNASCONI Juan Manuel","Correo":"bernasconi.j.m@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0164-350x290.jpg","Concejal":"SOTOLANO María Angel","Correo":"maruproquilmes@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0321-350x290.jpg","Concejal":"CASTRO Damián Guillermo","Correo":"damiancastroquilmes@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0170-350x290.jpg","Concejal":"CHIODO Ignacio","Correo":"chiodoabogados@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0489-350x290.jpg","Concejal":"COLDANI Raquel","Correo":"raquelcoldani@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0418-350x290.jpg","Concejal":"CONVERSANO Daniela","Correo":"concejaldanielaconversano@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0339-350x290.jpg","Concejal":"GALETTO Guillermo","Correo":"guillermoggaletto@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0176-350x290.jpg","Concejal":"GAITAN Facundo Martín","Correo":"facundogaitanhcd@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0342-350x290.jpg","Concejal":"MAISU Facundo","Correo":"maisufacundo@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0183-350x290.jpg","Concejal":"VIGLIANCO Eyleen","Correo":"eyleenviglianco@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/integrante.png","Concejal":"VIRGILIO Elisabet Laura","Correo":"elyvirgi@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0401-2-350x290.jpg","Concejal":"FERNANDEZ Gabriela","Correo":"conquilmes@yahoo.com.ar","Bloque":"GEN PROGRESISTA"}
 ];
 /* [
     {
