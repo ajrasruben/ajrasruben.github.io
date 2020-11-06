@@ -1,4 +1,30 @@
-var jsonDiputados = [
+var jsonDiputados =[{"Foto":"img/concejales/DSC_0366-350x290.jpg","Concejal":"Fabio Báez","Correo":"presidenciahcd@quilmes.gov.ar","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0361-350x290.jpg","Concejal":"STOLTZING UGARTE María Eva","Correo":"mariaevastol@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0366-350x290.jpg","Concejal":"BAEZ Fabio Rubén","Correo":"fabiodequilmes@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/dangelo-2-350x290.jpg","Concejal":"D´ANGELO OCAMPOS Federico","Correo":"fedeadangelo@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0205-350x290.jpg","Concejal":"ABAD Nair","Correo":"nair.iara.abad@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0214-350x290.jpg","Concejal":"BURTOLI Ariel Antonio","Correo":"arielburtoli@hotmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0381-350x290.jpg","Concejal":"CANO Susana","Correo":"susybcano@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0329-350x290.jpg","Concejal":"FESTUCCA Matías","Correo":"matiasfestucca@hotmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/integrante.png","Concejal":"GONZALEZ Laura Elizabeth","Correo":"lauragonzalaez07@hotmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/integrante.png","Concejal":"GOMEZ Fernando Ariel","Correo":"lularifflara@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/integrante.png","Concejal":"IRIBARNE Patricia Noemí","Correo":"patriciairibarne66@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/21-e1515589217105-350x290.jpg","Concejal":"MIERI María Eva","Correo":"despachoevamieri@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/DSC_0348-350x290.jpg","Concejal":"MENDEZ Diego","Correo":"diegomendez.quilmes@gmail.com","Bloque":"FRENTE DE TODOS"}
+,{"Foto":"img/concejales/177-Editar-350x290.jpg","Concejal":"BERNASCONI Juan Manuel","Correo":"bernasconi.j.m@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0164-350x290.jpg","Concejal":"SOTOLANO María Angel","Correo":"maruproquilmes@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0321-350x290.jpg","Concejal":"CASTRO Damián Guillermo","Correo":"damiancastroquilmes@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0170-350x290.jpg","Concejal":"CHIODO Ignacio","Correo":"chiodoabogados@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0489-350x290.jpg","Concejal":"COLDANI Raquel","Correo":"raquelcoldani@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0418-350x290.jpg","Concejal":"CONVERSANO Daniela","Correo":"concejaldanielaconversano@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0339-350x290.jpg","Concejal":"GALETTO Guillermo","Correo":"guillermoggaletto@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0176-350x290.jpg","Concejal":"GAITAN Facundo Martín","Correo":"facundogaitanhcd@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0342-350x290.jpg","Concejal":"MAISU Facundo","Correo":"maisufacundo@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0183-350x290.jpg","Concejal":"VIGLIANCO Eyleen","Correo":"eyleenviglianco@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/integrante.png","Concejal":"VIRGILIO Elisabet Laura","Correo":"elyvirgi@gmail.com","Bloque":"JUNTOS POR EL CAMBIO"}
+,{"Foto":"img/concejales/DSC_0401-2-350x290.jpg","Concejal":"FERNANDEZ Gabriela","Correo":"conquilmes@yahoo.com.ar","Bloque":"GEN PROGRESISTA"}
+];
+/* [
     {
         "Foto": "https://www4.hcdn.gob.ar/fotos/cuadradas/mcampagnoli.jpg",
         "Diputado": "Campagnoli, Marcela",
@@ -419,7 +445,7 @@ var jsonDiputados = [
         "Bloque": "UNIDAD Y EQUIDAD FEDERAL",
         "Correo": "pansaloni@hcdn.gob.ar"
     }
-];
+]; */
 var htmlTemplate = "<div class='col-md-4 col-12'>" +
                         "<div class='box-part shadow-sm text-center'>" +
                             "<img src='#FOTO#' style='width: 100px; height: 100px'/>" +
@@ -431,10 +457,24 @@ var htmlTemplate = "<div class='col-md-4 col-12'>" +
                         "</div>" +
                     "</div>";
 var mailSubject = "No a la Reforma Judicial";
-var mailBody= 'Señor Legislador/ra por medio de la presente le solicito que en el día en que se trate la "Reforma Judicial" conocida con el nombre de "LEY DE ORGANIZACIÓN Y COMPETENCIA DE LA JUSTICIA FEDERAL CON ASIENTO ' +
-              'EN LA CIUDAD AUTÓNOMA DE BUENOS AIRES Y EN LAS PROVINCIAS", se abstenga de hacerse presente en la Cámara para evitar el quórum, y de esta forma no ser cómplice de un gobierno que tiene las prioridades alteradas. ' +
-              'Cómo parte del pueblo, le informo que hay otros temas que son prioridades. Revistiendo el carácter de NECESARIAS y URGENTES, para tratar y sesionar en este contexto de emergencia sanitaria, económica y social. ' +
-              'Desde ya apelo a qué realizará lo correcto no dando quórum y evitando ser cómplice de un gobierno oportunista. Saludos cordiales!';
+
+var mailBody= "Sr/a Concejal:"+
+"Me dirijo a Ud. para manifestarle mi preocupación y mi opinión negativa para la construcción de una alcaidia (cárcel) en la ribera Quilmes."+
+"Particularmente, la zona elegida es el único espacio verde que le queda al municipio, además de que se trata de una zona inundable."+
+"El partido de Quilmes en su totalidad es una zona urbanizada, no contamos con terrenos libres ya que estamos rodeados de otros municipios igual de poblados como el nuestro y solo nos limita avenidas o vías del tren."+
+"Por esta razón es la que le solicito  a Ud, como representante de los intereses de los quilmeños, que revean el proyecto y que NO se vote a las apuradas sin analizar un informe detallado sobre aspectos técnicos y ambientales."+
+"Desde ya, muchas gracias por su tiempo.";
+//var mailBody= 'Señor Legislador/ra por medio de la presente le solicito que en el día en que se trate la "Reforma Judicial" conocida con el nombre de "LEY DE ORGANIZACIÓN Y COMPETENCIA DE LA JUSTICIA FEDERAL CON ASIENTO ' +
+//              'EN LA CIUDAD AUTÓNOMA DE BUENOS AIRES Y EN LAS PROVINCIAS", se abstenga de hacerse presente en la Cámara para evitar el quórum, y de esta forma no ser cómplice de un gobierno que tiene las prioridades alteradas. ' +
+//              'Cómo parte del pueblo, le informo que hay otros temas que son prioridades. Revistiendo el carácter de NECESARIAS y URGENTES, para tratar y sesionar en este contexto de emergencia sanitaria, económica y social. ' +
+//              'Desde ya apelo a qué realizará lo correcto no dando quórum y evitando ser cómplice de un gobierno oportunista. Saludos cordiales!';
+
+
+
+function getLinkMailtoAll(){
+	var mailto = 'mailto:presidenciahcd@quilmes.gov.ar?bcc=maruproquilmes@gmail.com;fedeadangelo@gmail.com;miriamarbert@yahoo.com.ar;mariaevastol@gmail.com;fabiodequilmes@gmail.com;fedeadangelo@gmail.com;nair.iara.abad@gmail.com;arielburtoli@hotmail.com;susybcano@gmail.com;matiasfestucca@hotmail.com;lauragonzalaez07@hotmail.com;lularifflara@gmail.com;patriciairibarne66@gmail.com;despachoevamieri@gmail.com;diegomendez.quilmes@gmail.com;bernasconi.j.m@gmail.com;maruproquilmes@gmail.com;damiancastroquilmes@gmail.com;chiodoabogados@gmail.com;raquelcoldani@gmail.com;concejaldanielaconversano@gmail.com;guillermoggaletto@gmail.com;facundogaitanhcd@gmail.com;maisufacundo@gmail.com;eyleenviglianco@gmail.com;elyvirgi@gmail.com;conquilmes@yahoo.com.ar&subject='+ encodeURIComponent(mailSubject) + '&body=' + encodeURIComponent(mailBody);
+	document.getElementById("mailTodos").href = mailto;
+}	
 
 function getlinkMailto(i){
     return 'mailto:' + jsonDiputados[i].Correo +'?subject='+ encodeURIComponent(mailSubject) + '&body=' + encodeURIComponent(mailBody);
@@ -443,7 +483,7 @@ function getHtmlWithIndex(i) {
     var temp = htmlTemplate;
     temp = temp.replace("#FOTO#",jsonDiputados[i].Foto);
     temp = temp.replace("#BLOQUE#",jsonDiputados[i].Bloque);
-    temp = temp.replace("#NOMBRE#",jsonDiputados[i].Diputado);
+    temp = temp.replace("#NOMBRE#",jsonDiputados[i].Concejal);
     temp = temp.replace("#LINK#",getlinkMailto(i));
 
     return temp;
