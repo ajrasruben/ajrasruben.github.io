@@ -1,187 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Unidos Argentina</title>
 
-   <link rel="icon" type="image/png" href="../img/logo.png" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../style/common.css" />
-    <link rel="stylesheet" href="../style/pages.css" />
-    <link rel="stylesheet" href="../style/cuestionario.css" />
+    <link href="../img/logo.png" rel="icon" type="image/png"/>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet"/>
+    <link href="../style/common.css" rel="stylesheet"/>
+    <link href="../style/pages.css" rel="stylesheet"/>
+    <link href="../style/cuestionario.css" rel="stylesheet"/>
     <script src="../js/cuestionario.js"></script>
-    <script
-      src="https://kit.fontawesome.com/64682867ca.js"
-      crossorigin="anonymous"
-    ></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/64682867ca.js"></script>
     <!--integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"-->
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    ></script>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand navbar-logo" href="../index.html"
-        ><img src="../img/logo.png" alt=""
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse navbar-light bg-light"
-        id="navbarText"
-      >
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="../index.html" class="nav-link">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./el-partido.html">El Partido</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./quienes-somos.html">¿Quiénes Somos?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./propuestas.html">Propuestas</a>
-          </li>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172921148-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-          <li class="nav-item">
-            <a
-              class="nav-link afiliate"
-              href="https://afiliate.unidosargentina.org/"
-              target="_blank"
-              >Afiliate</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://donaronline.org/ciudadanos-por-el-cambio-asociacion-civil/por-una-argentina-libre"
-              target="_blank"
-              >Donaciones</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./bases.html">Bases</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./redes.html">Uni2 en redes</a>
-          </li>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-172921148-1');
+    </script>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand navbar-logo" href="../index.html"><img alt="" src="../img/logo.png"/></a>
+    <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarText" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-light bg-light" id="navbarText">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./el-partido.html">El Partido</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./quienes-somos.html">¿Quiénes Somos?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./propuestas.html">Propuestas</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link afiliate" href="https://afiliate.unidosargentina.org/" target="_blank">Afiliate</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="https://donaronline.org/ciudadanos-por-el-cambio-asociacion-civil/por-una-argentina-libre"
+                   target="_blank">Donaciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./bases.html">Bases</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./redes.html">Uni2 en redes</a>
+            </li>
         </ul>
         <span class="navbar-text">
-          <img src="/img/puntos-naranja.png" alt="" class="puntos-naranja" />
+          <img alt="" class="puntos-naranja" src="/img/puntos-naranja.png"/>
         </span>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- SECTION 1: BASES -->
-    <!--template-->
-    <div id="questionTemplate" style="display: none;">
-      <div class="questionBox">
+<!-- SECTION 1: BASES -->
+<!--template-->
+<div id="questionTemplate" style="display: none;">
+    <div class="questionBox">
         <p class="title" style="margin: 1rem 0rem 0.5rem 0rem">{{titulo}}</p>
         <div class="question">{{pregunta}}</div>
-        <ul class="answerList">
-        </ul>
+        <ul class="answerList"></ul>
         <div class="questionRow">
-          <a class="button nextquestion" href="javascript:void(0);">Next</a>
-          <label class="mustComplete alert alert-danger invisible" style="font-size: small;">
-            Debe contestar la pregunta antes de continuar...
-          </label>
-          <span class="questionNumber"></span>
+            <a class="button nextquestion" href="javascript:void(0);">Next</a>
+            <label class="mustComplete alert alert-danger invisible" style="font-size: small;">
+                Debe contestar la pregunta antes de continuar...
+            </label>
+            <span class="questionNumber"></span>
         </div>
-      </div>
     </div>
-    <div id="respuestaTemplate" style="display: none;">
-      <div class="card answer">
+</div>
+<div id="respuestaTemplate" style="display: none;">
+    <div class="card answer">
         <div class="card-header">
-          <h6 class="card-title"><i class="fa fa-question-circle-o pull-left"></i><span span style="margin-left: 10px;" class="badge badge-pill">Pensamiento Liberal</span><span class="pregunta" >What is Lorem Ipsum?</span></h6>
+            <h6 class="card-title"><i class="fa fa-question-circle-o pull-left"></i><span class="badge badge-pill"
+                                                                                          span
+                                                                                          style="margin-left: 10px;">Pensamiento Liberal</span><span
+                    class="pregunta">What is Lorem Ipsum?</span></h6>
         </div>
         <div class="card-body">
-          <p><b>Tu respuesta: </b><span class="userResponse" >Esta es tu respuesta</span></p>
-          <p><b>Uni2 propone: </b><b class="propuesta"></b><span class="uni2Response" >
+            <p><b>Tu respuesta: </b><span class="userResponse">Esta es tu respuesta</span></p>
+            <p><b>Uni2 propone: </b><b class="propuesta"></b><span class="uni2Response">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen bookEsta es tu respuesta</span></p>
         </div>
-      </div>
     </div>
-    <section id="bases">
-      <div class="container clearfix">
+</div>
+<section id="bases">
+    <div class="container clearfix">
         <div class="row">
-          <div class="col-md-12">
-            <h1 class="title">¿Sos liberal y no lo sabías?</h1>
-            <h2 class="subtitle"> Respondé este cuestionario y descubrilo.</h2>
-            <p class="text">Te invitamos a responder este cuestionario, utilizando tu criterio y opinion en diferentes temas de interés general.
-            Al terminar, el sistema te mostrará cuales de tus respuestas concuerdan con las propuestas que Uni2 tiene.</p>
-          </div>
+            <div class="col-md-12">
+                <h1 class="title">¿Sos liberal y no lo sabías?</h1>
+                <h2 class="subtitle"> Respondé este cuestionario y descubrilo.</h2>
+                <p class="text">Te invitamos a responder este cuestionario, utilizando tu criterio y opinion en
+                    diferentes temas de interés general.
+                    Al terminar, el sistema te mostrará cuales de tus respuestas concuerdan con las propuestas que Uni2
+                    tiene.</p>
+            </div>
         </div>
-        <div class="contenedorCuestionario">
-        </div>
-        <div class="respuestasCuestionario clearfix" style="display: none;">
-        </div>
-      </div>
-    </section>
+        <div class="contenedorCuestionario"></div>
+        <div class="respuestasCuestionario clearfix" style="display: none;"></div>
+    </div>
+</section>
 
-    <script type="text/javascript">
-      agregarPreguntas();
-      updateQuestionNumberOfQuestions();
-    </script>
-    <div class="container-fluid">
-      <div class="row footer">
+<script type="text/javascript">
+    agregarPreguntas();
+    updateQuestionNumberOfQuestions();
+</script>
+<div class="container-fluid">
+    <div class="row footer">
         <div class="col-md-3">
-          <a href="https://www.instagram.com/uni2argentina/" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://twitter.com/uni2argentina" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <h1>@uni2argentina</h1>
+            <a href="https://www.instagram.com/uni2argentina/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/uni2argentina" target="_blank"><i class="fab fa-twitter"></i></a>
+            <h1>@uni2argentina</h1>
         </div>
         <div class="col-md-4 offset-md-5">
-          <h1>Hace falta algo nuevo</h1>
+            <h1>Hace falta algo nuevo</h1>
         </div>
-      </div>
     </div>
+</div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-163446484-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-163446484-1");
-    </script>
-  </body>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
 </html>

@@ -1,0 +1,47 @@
+#bases {
+    background: #f6f6f6; /* Ver si luego le aplicamos este mismo background al resto de las pages */
+    margin: 0px 0px 100px 0px ;
+
+}
+
+h4 {
+    margin: 0.7rem 0;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+i {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.fa-instagram {
+    color: #c13584;
+}
+.iconos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: 1.5rem 0rem 1rem 0;
+}
+
+.box-part {
+    padding: 1rem;
+    border-radius: 7px;
+    margin: 0.8rem 0.5rem;
+    background: white;
+    transition: 0.2s ease-in;
+}
+
+.box-part:hover {
+    transform: translateY(-0.6rem);
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Unidos Argentina</title>
+
+    <link href="../img/logo.png" rel="icon" type="image/png"/>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet"/>
+    <link href="../style/common.css" rel="stylesheet"/>
+    <link href="../style/pages.css" rel="stylesheet"/>
+    <link href="../style/ficha.css" rel="stylesheet"/>
+
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/64682867ca.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+</head>
+<body>
+<section id="">
+    <div class="big_container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title">
+                    Ficha de afiliación (Lado A) </h1>
+            </div>
+        </div>
+
+
+        <div class="row" style="padding:0">
+
+
+            <div class="col-12 principal" style="">
+                <div class="row">
+                    <div class="col-1 ">
+                        <div class="col-12 izquierda">
+                            <div class="rotado90">PARTIDO:<span id="partido"></span></div>
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="row primercapa">
+                            <div class="col-9">
+                                <div class="row renglon">
+                                    <div class="col-6 nopadding">
+                                        <span class="label35">Apellido(s): </span>
+                                        <span class="coloured_span" id="apellido"></span>
+                                    </div>
+                                    <div class="col-6 nopadding">
+                                        <span class="label30 centrar">Nombre(s): </span>
+                                        <span class="coloured_span" id="nombre"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row renglon">
+                                    <div class="col-6 nopadding">
+                                        <span class="label25">Matrícula: </span>
+                                        <span class="coloured_span" id="tipo"></span>
+                                        <span class="label20 centrar"> Nº</span>
+                                        <span class="coloured_span" id="matricula"></span>
+                                    </div>
+                                    <div class="col-6 nopadding">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <span class="label45 ">DM: </span><span class="coloured_span"
+                                                                                        id="dm">*</span>
+                                            </div>
+                                            <div class="col-4">
+                                                <span class="label45 centrar">Reg: </span><span class="coloured_span"
+                                                                                                id="reg">*</span>
+                                            </div>
+                                            <div class="col-4">
+                                                <span class="label45 ">Clase: </span><span class="coloured_span"
+                                                                                           id="clase"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row renglon">
+                                    <div class="col-6 ">
+                                        <div class="row">
+                                            <div class="col-3 nopadding">
+                                                <span class="label60">Sexo </span>
+                                                <span class="coloured_span" id="sex"></span>
+                                            </div>
+
+                                            <div class="col-9 nopadding">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <span class="centrar">Fecha de nacimiento: </span>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <span class="coloured_span" id="dd">dd</span>/<span
+                                                                    class="coloured_span" id="mm">mm</span>/<span
+                                                                    class="coloured_span" id="aaaa">aaaa</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 nopadding">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span class="label30 centrar">Lugar: </span>
+                                                <span class="coloured_span" id="lugar_nacimiento"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row renglon">
+                                    <div class="col-6 nopadding">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span class="label30">Profesi&oacute;n u oficio: </span>
+                                                <span class="coloured_span" id="profesion"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 nopadding">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span class="label30 centrar">Estado Civil: </span>
+                                                <span class="coloured_span" id="estado_civil"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row renglon">
+                                    <div class="col-2">
+                                        <div class="row renglon mediumpadding">&nbsp;</div>
+                                        <div class="row renglon mediumpadding">&Uacute;ltimo domicilio</div>
+                                        <div class="row renglon mediumpadding">según doc. c&iacute;vico</div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="row renglon">
+                                            <span class="label30">Distrito Electoral:</span>
+                                            <span class="coloured_span"
+                                                  id="distrito_electoral"></span>
+                                        </div>
+                                        <div class="row renglon">
+                                            <span class="label30">Partido o Departamento:</span>
+                                            <span class="coloured_span" id="partido_departamento"></span>
+                                        </div>
+                                        <div class="row  renglon">
+                                            <span class="label30">Cuartel o Paden&iacute;a:</span>
+                                            <span class="coloured_span" id="cuartel"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-3 greatpadding Lborder">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="row primercapa">
+                            <div class="col-9 ">
+                                <div class="row renglon">
+                                    <div class="col-2">
+                                        &nbsp;
+                                    </div>
+                                    <div class="col-10">
+
+
+                                        <div class="row renglon nopadding">
+                                            <span class="label30">Ciudad, Pueblo o Localidad:</span>
+                                            <span class="coloured_span" id="ciudad"></span>
+                                        </div>
+
+
+                                        <div class="row renglon nopadding">
+
+
+                                            <div class="col-6 nopadding">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="label15">Calle: </span><span class="coloured_span"
+                                                                                                  id="calle">calle</span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-3 nopadding">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="label45 centrar">N&uacute;mero: </span><span
+                                                            class="coloured_span" id="numero">numero</span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-3 nopadding">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="label45 centrar">Piso: </span><span
+                                                            class="coloured_span" id="piso">piso</span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" id="recuadro_dep" style="">
+                                <div class="col-12 nopadding">
+                                    <div class="row renglon">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                                <div class="col-12 nopadding">
+                                    <div class="row renglon">
+                                        <span class="label15">Dep: </span>
+                                        <span class="coloured_span" id="depto">dep</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    &nbsp;<br><br><br><br><br>
+                                </div>
+                                <div class="row bordertop">
+                                    <span class="centrar">Firma del Solicitante</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="panel_firmas">
+
+                            <div class="col-5" id="cuadro_aceptacion">
+                                <div class="row tentop"><span class="centrar">Aceptación de la afiliaci&oacute;n</span>
+                                </div>
+                                <div class="row tentop"><span class="centrar">Fecha:<span class="coloured_span"
+                                                                                          id="fecha_aceptacion_dia">*</span>/<span
+                                        class="coloured_span" id="fecha_aceptacion_mes">*</span>/<span
+                                        class="coloured_span" id="fecha_aceptacion_ano">*</span></span></div>
+                                <div class="row">&nbsp;</div>
+                                <div class="row">&nbsp;</div>
+                                <div class="row">&nbsp;</div>
+                                <div class="row">&nbsp;</div>
+                                <div class="row bordertop achicar"><span
+                                        class="centrar">Firma Autoridad Partidaria</span></div>
+
+                            </div>
+                            <div class="col-7">
+                                <div class="row bordertop achicar"><span class="centrar">Certificaci&oacute;n de Firma (por titular Registro Civil, o de las Perso-</span>
+                                </div>
+                                <div class="row"><span class="centrar">nas, Escribano, Juez de Paz, Autoridad Partidaria o Policial).</span>
+                                </div>
+                                <div class="row">&nbsp;</div>
+                                <div class="row">&nbsp;</div>
+                                <div class="row">&nbsp;</div>
+                                <div class="row">&nbsp;</div>
+                                <div class="row bordertop achicar"><span class="centrar">Certificaci&oacute;n de la Secretaría Electoral</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var c = url.searchParams.get("data");
+
+    var obj = {
+        dni: "*",
+        nombre: "*",
+        apellido: "*",
+        telefono: "*",
+        domicilio: "*",
+        partido_depto:"*",
+        localidad: "*",
+        partido: "[NO COMPLETAR]",
+        clase: "",
+        sex: "*",
+        dd: "*",
+        mm: "*",
+        aaaa: "*",
+        lugar_nacimiento: "*",
+        profesion: "*",
+        estado_civil: "*",
+        provincia:"*",
+        cuartel:"*",
+        calle:"*",
+        numero:"*",
+        piso:"*",
+        depto:"*",
+    };
+    if (c != null) {
+        var data = b64DecodeUnicode(c);
+        console.log(data);
+        obj = Object.assign(obj, JSON.parse(data));
+    }
+    $("#partido").text(obj.partido);
+    $("#tipo").text("DNI");
+    $("#matricula").text(obj.dni);
+    $("#apellido").text(obj.apellido);
+    $("#nombre").text(obj.nombre);
+    $("#clase").text(obj.aaaa);
+    $("#dd").text(obj.dd);
+    $("#mm").text(obj.mm);
+    $("#aaaa").text(obj.aaaa);
+    $("#profesion").text(obj.profesion);
+    $("#estado_civil").text(obj.estado_civil);
+    $("#sex").text(obj.sex);
+    $("#lugar_nacimiento").text(obj.lugar_nacimiento);
+    $("#distrito_electoral").text(obj.provincia);
+    $("#partido_departamento").text(obj.partido_depto);
+    $("#ciudad").text(obj.localidad);
+    $("#cuartel").text(obj.cuartel);
+    $("#calle").text(obj.calle);
+    $("#numero").text(obj.numero);
+    $("#piso").text(obj.piso);
+    $("#depto").text(obj.depto);
+    console.log(obj);
+
+    function b64DecodeUnicode(str) {
+        // Going backwards: from bytestream, to percent-encoding, to original string.
+        return decodeURIComponent(atob(str).split('').map(function (c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+    }
+
+    function consoleLog(data) {
+        var logElement = document.getElementById('log');
+        logElement.innerHTML += data + '\n';
+    }
+</script>
+</body>
+</html>
