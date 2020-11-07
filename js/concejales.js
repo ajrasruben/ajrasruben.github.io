@@ -456,7 +456,7 @@ var htmlTemplate = "<div class='col-md-4 col-12'>" +
                             "</a>" +
                         "</div>" +
                     "</div>";
-var mailSubject = "No a la Reforma Judicial";
+var mailSubject = "NO A LA CARCEL EN LA RIBERA DE QUILMES";
 
 var mailBody= "Sr/a Concejal:"+
 "Me dirijo a Ud. para manifestarle mi preocupación y mi opinión negativa para la construcción de una alcaidia (cárcel) en la ribera Quilmes."+
